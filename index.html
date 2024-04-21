@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myPromiseApp">
+
+<head>
+    <title>Promesas angularjs</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <script src="app/modules/app.js"></script>
+    <script src="app/controllers/myPromiseController.js"></script>
+    <script src="app/services/myPromiseService.js"></script>
+
+</head>
+
+<body ng-controller="myPromiseController">
+    <header>
+        <h2>Ejemplos promesas en AngularJS</h2>
+    </header>
+
+    <hr>
+
+    <section>
+        <h3>Time: {{time}}</h3>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Promesas - <small>1 segundo y 5 segundos</small></h3>
+        <i>Vemos la primera respuesta al segundo, el resto espera 5 segundos</i>
+        <p>Dato promesa coches: <b>{{carsData}}</b></p>
+        <p>Dato promesa propietarios: <b>{{ownerData}}</b></p>
+        <p>Dato promesa conjunta: <b>{{unionData}}</b></p>
+    </section>
+
+    <section>
+        <h3>Promesa con nombres - <small>1 segundo y 5 segundos</small></h3>
+        <i>Espera por ambas, contesta en 5 segundos</i>
+        <p>Dato A: <b>{{dataA}}</b></p>
+        <p>Dato B: <b>{{dataB}}</b></p>
+    </section>
+</body>
+
+</html>
